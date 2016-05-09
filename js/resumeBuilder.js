@@ -195,3 +195,11 @@ bio.display();
 work.display();
 projects.display();
 education.display();
+
+/* Use of Jquery to switch classes on elements that use text and background color I don't want to be part of my visual design */
+$("#lets-connect").removeClass("dark-gray").addClass("white-background");
+$("#lets-connect").children().removeClass("orange").addClass("white-background");
+$("span:first-child").removeClass("orange-text").addClass("brown-text");
+$("#topContacts").find("span:nth-child(2)").removeClass("white-text").addClass("orange-text");
+$("#footerContacts").find("span:nth-child(2)").removeClass("white-text").addClass("orange-text");
+$("div.gray").removeClass("gray").addClass("white-background");
